@@ -6,20 +6,20 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-3xl mx-auto space-y-12 animate-fade-up">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-light tracking-tight">
+      <main className="container mx-auto px-6 pt-40 pb-32">
+        <div className="max-w-3xl mx-auto space-y-16 animate-fade-up">
+          <div className="space-y-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-none">
               akshat gupta
             </h1>
-            <p className="text-xl text-muted-foreground font-light">
+            <p className="text-xl md:text-2xl text-muted-foreground font-normal">
               known online as <span className="text-primary">mindovernoise</span>
             </p>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <div className="space-y-6 text-lg leading-relaxed font-light text-muted-foreground">
+          <div className="space-y-8 text-lg leading-relaxed font-normal text-muted-foreground">
             <p>
               i explore how humans think, how machines learn, and how both can grow together.
             </p>
@@ -37,9 +37,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <blockquote className="border-l-2 border-primary pl-6 py-2 italic text-lg text-foreground/80 font-light">
+          <blockquote className="border-l-2 border-primary pl-8 py-4 italic text-lg md:text-xl text-foreground/90 font-normal">
             "curiosity is the only religion worth following."
           </blockquote>
         </div>

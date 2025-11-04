@@ -11,15 +11,15 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, description, tech, delay = 0 }: ProjectCardProps) => {
   return (
     <Card 
-      className="group p-6 bg-card/50 border-border/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-500 hover:shadow-glow hover:-translate-y-1 animate-fade-up"
+      className="group p-8 bg-card/30 border-border/40 backdrop-blur-sm hover:bg-card/50 transition-all duration-500 hover:shadow-[0_4px_24px_hsl(0_0%_0%/0.5)] hover:-translate-y-1 animate-fade-up"
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="space-y-4">
-        <h3 className="text-xl font-light tracking-tight group-hover:text-primary transition-colors">
+      <div className="space-y-5">
+        <h3 className="text-xl font-semibold tracking-tight group-hover:text-primary transition-all duration-500">
           {title}
         </h3>
         
-        <p className="text-muted-foreground text-sm leading-relaxed font-light">
+        <p className="text-muted-foreground text-sm leading-relaxed font-normal">
           {description}
         </p>
 
@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, tech, delay = 0 }: ProjectCardProps) 
             <Badge 
               key={item} 
               variant="secondary" 
-              className="bg-secondary/50 text-foreground/80 border border-border/30 font-light"
+              className="bg-secondary/40 text-foreground/70 border border-border/20 font-normal text-xs px-3 py-1"
             >
               {item}
             </Badge>

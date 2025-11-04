@@ -14,7 +14,14 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+      },
+      letterSpacing: {
+        tighter: "-0.04em",
+        tight: "-0.02em",
+      },
+      lineHeight: {
+        relaxed: "1.6",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -80,7 +87,11 @@ export default {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "fade-up": {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-up": {
+          "0%": { opacity: "0", transform: "translateY(12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "scale-in": {
@@ -101,11 +112,12 @@ export default {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.4s ease-out",
-        "fade-up": "fade-up 0.6s ease-out",
-        "scale-in": "scale-in 0.3s ease-out",
+        "accordion-down": "accordion-down 0.3s cubic-bezier(0.25, 1, 0.5, 1)",
+        "accordion-up": "accordion-up 0.3s cubic-bezier(0.25, 1, 0.5, 1)",
+        "fade-in": "fade-in 0.5s cubic-bezier(0.25, 1, 0.5, 1)",
+        "fade-up": "fade-up 0.6s cubic-bezier(0.25, 1, 0.5, 1)",
+        "slide-up": "slide-up 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
+        "scale-in": "scale-in 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
         "glow": "glow 3s ease-in-out infinite",
         "typewriter": "typewriter 2s steps(40) forwards",
         "blink": "blink 1s step-end infinite",

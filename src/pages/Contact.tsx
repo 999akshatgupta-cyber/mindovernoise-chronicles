@@ -16,34 +16,34 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-2xl mx-auto space-y-12 animate-fade-up">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-light tracking-tight">
+      <main className="container mx-auto px-6 pt-40 pb-32">
+        <div className="max-w-2xl mx-auto space-y-16 animate-fade-up">
+          <div className="space-y-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-none">
               contact
             </h1>
-            <p className="text-xl text-muted-foreground font-light">
+            <p className="text-xl md:text-2xl text-muted-foreground font-normal">
               or just say hi — i reply when it's something real.
             </p>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-light text-muted-foreground">
+          <form onSubmit={handleSubmit} className="space-y-8">
+            <div className="space-y-3">
+              <label htmlFor="name" className="text-sm font-normal text-muted-foreground">
                 name
               </label>
               <Input
                 id="name"
                 placeholder="your name"
                 required
-                className="bg-secondary/30 border-border/50 focus:border-primary transition-colors"
+                className="bg-secondary/20 border-border/40 focus:border-primary transition-all duration-500 h-12"
               />
             </div>
 
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-light text-muted-foreground">
+            <div className="space-y-3">
+              <label htmlFor="email" className="text-sm font-normal text-muted-foreground">
                 email
               </label>
               <Input
@@ -51,12 +51,12 @@ const Contact = () => {
                 type="email"
                 placeholder="your@email.com"
                 required
-                className="bg-secondary/30 border-border/50 focus:border-primary transition-colors"
+                className="bg-secondary/20 border-border/40 focus:border-primary transition-all duration-500 h-12"
               />
             </div>
 
-            <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-light text-muted-foreground">
+            <div className="space-y-3">
+              <label htmlFor="message" className="text-sm font-normal text-muted-foreground">
                 message
               </label>
               <Textarea
@@ -64,26 +64,26 @@ const Contact = () => {
                 placeholder="what's on your mind?"
                 required
                 rows={6}
-                className="bg-secondary/30 border-border/50 focus:border-primary transition-colors resize-none"
+                className="bg-secondary/20 border-border/40 focus:border-primary transition-all duration-500 resize-none"
               />
             </div>
 
             <Button
               type="submit"
               size="lg"
-              className="w-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:shadow-glow"
+              className="w-full"
             >
               send message
             </Button>
           </form>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <div className="space-y-4">
-            <p className="text-sm text-muted-foreground font-light text-center">
+          <div className="space-y-6">
+            <p className="text-sm text-muted-foreground font-normal text-center">
               or connect on social
             </p>
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-4">
               {[
                 { icon: Instagram, url: "#", label: "Instagram" },
                 { icon: Twitter, url: "#", label: "Twitter" },
@@ -94,10 +94,10 @@ const Contact = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-secondary/30 border border-border/50 rounded-lg hover:bg-secondary/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group"
+                  className="p-4 bg-secondary/20 border border-border/40 rounded-lg hover:bg-secondary/40 hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_20px_hsl(217_91%_65%/0.15)] hover:-translate-y-0.5 group"
                   aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+                  <social.icon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-all duration-500" />
                 </a>
               ))}
             </div>

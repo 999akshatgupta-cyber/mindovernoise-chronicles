@@ -90,33 +90,32 @@ const Hero = () => {
         <div className="container relative z-10 max-w-4xl px-6">
           <div className="space-y-8">
             {/* Typewriter text */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal tracking-tight leading-tight">
               {displayedText}
               {!isTypingComplete && showMainContent && (
                 <span className="inline-block w-1 h-[1em] bg-primary ml-1 animate-blink" />
               )}
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl font-light">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl font-normal leading-relaxed">
               i help ideas become products people remember.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-6">
               <Link to="/projects">
                 <Button 
                   size="lg" 
-                  className="group bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all duration-300 hover:shadow-glow"
+                  className="group"
                 >
                   see my work
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
               </Link>
               <Link to="/contact">
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-border hover:bg-secondary/50 transition-all duration-300"
                 >
                   say hi
                 </Button>

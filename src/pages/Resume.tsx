@@ -8,46 +8,46 @@ const Resume = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-3xl mx-auto space-y-12 animate-fade-up">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-light tracking-tight">
+      <main className="container mx-auto px-6 pt-40 pb-32">
+        <div className="max-w-3xl mx-auto space-y-16 animate-fade-up">
+          <div className="space-y-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-none">
               resume
             </h1>
-            <p className="text-xl text-muted-foreground font-light">
+            <p className="text-xl md:text-2xl text-muted-foreground font-normal">
               the static version of a moving target.
             </p>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <div className="space-y-10">
+          <div className="space-y-12">
             {/* Education */}
-            <section className="space-y-4">
-              <h2 className="text-2xl font-light tracking-tight text-primary">
+            <section className="space-y-5">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-primary">
                 education
               </h2>
-              <div className="space-y-2">
-                <p className="text-lg">B.Tech, Mining Engineering</p>
-                <p className="text-muted-foreground font-light">
+              <div className="space-y-3">
+                <p className="text-lg font-normal">B.Tech, Mining Engineering</p>
+                <p className="text-muted-foreground font-normal">
                   National Institute of Technology Karnataka (NIT-K)
                 </p>
-                <p className="text-sm text-muted-foreground font-light">
+                <p className="text-sm text-muted-foreground font-normal">
                   2025 – 2029
                 </p>
               </div>
             </section>
 
             {/* Focus Areas */}
-            <section className="space-y-4">
-              <h2 className="text-2xl font-light tracking-tight text-primary">
+            <section className="space-y-5">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-primary">
                 focus
               </h2>
               <div className="flex flex-wrap gap-3">
                 {["AI", "Automation", "Philosophy", "Systems Thinking", "n8n Workflows"].map((area) => (
                   <span
                     key={area}
-                    className="px-4 py-2 bg-secondary/50 border border-border/30 rounded-md text-sm font-light"
+                    className="px-5 py-2.5 bg-secondary/40 border border-border/30 rounded-full text-sm font-normal"
                   >
                     {area}
                   </span>
@@ -56,11 +56,11 @@ const Resume = () => {
             </section>
 
             {/* Links */}
-            <section className="space-y-4">
-              <h2 className="text-2xl font-light tracking-tight text-primary">
+            <section className="space-y-5">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-primary">
                 connect
               </h2>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {[
                   { name: "Instagram", url: "#" },
                   { name: "Twitter", url: "#" },
@@ -71,7 +71,7 @@ const Resume = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors w-fit"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-500 w-fit font-normal"
                   >
                     {link.name}
                     <ExternalLink className="h-4 w-4" />
@@ -81,19 +81,18 @@ const Resume = () => {
             </section>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
           <div className="flex justify-center">
             <Button
               size="lg"
-              className="bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-all duration-300"
             >
               View Full Resume
             </Button>
           </div>
 
-          <div className="pt-8 text-center">
-            <p className="text-sm text-muted-foreground font-light italic">
+          <div className="pt-12 text-center">
+            <p className="text-sm text-muted-foreground font-normal italic">
               resume is static; curiosity isn't.
             </p>
           </div>

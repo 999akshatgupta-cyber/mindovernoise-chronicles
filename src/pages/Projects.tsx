@@ -25,20 +25,20 @@ const Projects = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-5xl mx-auto space-y-12">
-          <div className="space-y-6 animate-fade-up">
-            <h1 className="text-5xl md:text-6xl font-light tracking-tight">
+      <main className="container mx-auto px-6 pt-40 pb-32">
+        <div className="max-w-5xl mx-auto space-y-16">
+          <div className="space-y-8 animate-fade-up">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-none">
               projects
             </h1>
-            <p className="text-xl text-muted-foreground font-light max-w-2xl">
+            <p className="text-xl md:text-2xl text-muted-foreground font-normal max-w-2xl">
               automation experiments where ideas meet execution.
             </p>
           </div>
 
-          <div className="h-px bg-border/50" />
+          <div className="h-px bg-border/40" />
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <ProjectCard
                 key={project.title}
@@ -48,8 +48,8 @@ const Projects = () => {
             ))}
           </div>
 
-          <div className="pt-8 text-center">
-            <p className="text-sm text-muted-foreground font-light italic">
+          <div className="pt-12 text-center">
+            <p className="text-sm text-muted-foreground font-normal italic">
               new experiments coming soon — every workflow is an idea turned into motion.
             </p>
           </div>
