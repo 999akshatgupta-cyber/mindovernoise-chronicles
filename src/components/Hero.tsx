@@ -10,10 +10,10 @@ const Hero = () => {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
-    // Show video hero for 3 seconds, then reveal main content
+    // Show video hero for 8 seconds, then reveal main content
     const timer = setTimeout(() => {
       setShowMainContent(true);
-    }, 3000);
+    }, 8000);
 
     return () => clearTimeout(timer);
   }, []);
