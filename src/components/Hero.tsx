@@ -11,9 +11,9 @@ const Hero = () => {
   useEffect(() => {
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
+      if (currentIndex < fullText.length) {
         currentIndex++;
+        setDisplayedText(fullText.slice(0, currentIndex));
       } else {
         setIsTypingComplete(true);
         clearInterval(typingInterval);
@@ -21,7 +21,7 @@ const Hero = () => {
     }, 50);
 
     return () => clearInterval(typingInterval);
-  }, []);
+  }, [fullText]);
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
