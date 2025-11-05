@@ -24,7 +24,16 @@ const Philosophy = () => {
   }, [thoughts.length]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div 
+      className="min-h-screen"
+      style={{
+        backgroundImage: 'url(/gradient-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: window.innerWidth > 1024 ? 'fixed' : 'scroll'
+      }}
+    >
       <Navigation />
       
       <main className="container mx-auto px-6 pt-40 pb-32">
