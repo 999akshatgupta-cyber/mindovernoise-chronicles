@@ -79,13 +79,17 @@ const Hero = () => {
         className={`min-h-screen flex items-center justify-center relative overflow-hidden transition-all duration-1000 ${
           showMainContent ? 'opacity-100' : 'opacity-0'
         }`}
-        style={{ transitionTimingFunction: 'cubic-bezier(0.25,1,0.5,1)' }}
+        style={{ 
+          transitionTimingFunction: 'cubic-bezier(0.25,1,0.5,1)',
+          backgroundImage: 'url(/neon-grid-bg.png)',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: window.innerWidth > 1024 ? 'fixed' : 'scroll'
+        }}
       >
-        {/* Grid pattern background */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-        
-        {/* Gradient glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/45 pointer-events-none" />
 
         <div className="container relative z-10 max-w-4xl px-6">
           <div className="space-y-8">
