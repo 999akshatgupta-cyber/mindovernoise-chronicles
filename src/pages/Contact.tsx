@@ -13,18 +13,11 @@ const Contact = () => {
   };
 
   return (
-    <div 
-      className="min-h-screen"
-      style={{
-        backgroundImage: 'url(/gradient-bg.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: window.innerWidth > 1024 ? 'fixed' : 'scroll'
-      }}
+    <div
+      className="min-h-screen bg-custom-gradient"
     >
       <Navigation />
-      
+
       <main className="container mx-auto px-6 pt-40 pb-32">
         <div className="max-w-2xl mx-auto space-y-16 animate-fade-up">
           <div className="space-y-8">

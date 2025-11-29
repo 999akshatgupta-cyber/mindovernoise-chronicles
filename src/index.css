@@ -62,4 +62,8 @@ All colors MUST be HSL.
     @apply font-semibold;
     letter-spacing: -0.02em;
   }
+
+  .bg-custom-gradient {
+    background: linear-gradient(135deg, #7e57c2 0%, #ab47bc 50%, #ec407a 100%);
+  }
 }

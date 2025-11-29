@@ -24,18 +24,11 @@ const Philosophy = () => {
   }, [thoughts.length]);
 
   return (
-    <div 
-      className="min-h-screen"
-      style={{
-        backgroundImage: 'url(/gradient-bg.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: window.innerWidth > 1024 ? 'fixed' : 'scroll'
-      }}
+    <div
+      className="min-h-screen bg-custom-gradient"
     >
       <Navigation />
-      
+
       <main className="container mx-auto px-6 pt-40 pb-32">
         <div className="max-w-4xl mx-auto space-y-24">
           <div className="space-y-8 animate-fade-up">
@@ -55,11 +48,10 @@ const Philosophy = () => {
               {thoughts.map((thought, index) => (
                 <p
                   key={index}
-                  className={`text-2xl md:text-3xl lg:text-4xl font-normal text-center leading-relaxed transition-all duration-1000 cubic-bezier(0.25, 1, 0.5, 1) absolute inset-0 ${
-                    index === currentThought
+                  className={`text-2xl md:text-3xl lg:text-4xl font-normal text-center leading-relaxed transition-all duration-1000 cubic-bezier(0.25, 1, 0.5, 1) absolute inset-0 ${index === currentThought
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-6 pointer-events-none"
-                  }`}
+                    }`}
                 >
                   {thought}
                 </p>
