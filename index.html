@@ -24,6 +24,22 @@
   <meta name="twitter:title" content="Mindovernoise — Akshat Gupta" />
   <meta name="twitter:description" content="AI Enthusiast & Philosopher" />
   <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      var div = document.createElement('div');
+      div.style.color = 'red';
+      div.style.backgroundColor = 'white';
+      div.style.padding = '20px';
+      div.style.position = 'fixed';
+      div.style.top = '0';
+      div.style.left = '0';
+      div.style.zIndex = '9999';
+      div.style.width = '100%';
+      div.style.borderBottom = '2px solid black';
+      div.innerHTML = '<h3>Global Error</h3><p>' + message + '</p><p>' + source + ':' + lineno + '</p>';
+      document.body.appendChild(div);
+    };
+  </script>
 </head>
 
 <body>
