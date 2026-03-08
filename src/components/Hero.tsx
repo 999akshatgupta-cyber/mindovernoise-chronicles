@@ -320,32 +320,32 @@ const Hero = () => {
           <div className="absolute bottom-0 left-0 right-0 h-40 z-[6] bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
 
           {/* Compact Bottom Dock — frosted glass bar with key info */}
-          <div className="hero-dock relative z-[7] w-full pb-6 pt-5 px-4 sm:px-8">
+          <div className="hero-dock relative z-[7] w-full pb-8 pt-6 px-4 sm:px-8">
             <div className="container">
               <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 
                 {/* Left: Tagline */}
-                <div className="flex items-center gap-3 shrink-0">
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-primary">
+                <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 shrink-0">
+                  <p className="text-[0.65rem] sm:text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-primary text-center">
                     Built on First Principles
                   </p>
-                  <span className="hidden sm:inline text-white/20">—</span>
-                  <h2 className="hidden sm:block text-lg font-semibold tracking-[-0.03em] text-white">
+                  <span className="hidden lg:inline text-white/20">—</span>
+                  <h2 className="hidden lg:block text-lg font-semibold tracking-[-0.03em] text-white">
                     Not Hype.
                   </h2>
                 </div>
 
                 {/* Right: Metric Pills */}
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="flex flex-wrap items-center justify-center lg:justify-end gap-2 sm:gap-3">
                   {heroMetrics.map((metric) => (
                     <div
                       key={metric.label}
-                      className="hero-dock-pill rounded-full px-4 py-2 backdrop-blur-xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors cursor-default"
+                      className="hero-dock-pill flex items-center rounded-full px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors cursor-default"
                     >
-                      <span className="text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-primary mr-2">
+                      <span className="text-[0.55rem] sm:text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-primary mr-1.5 sm:mr-2">
                         {metric.label}
                       </span>
-                      <span className="text-sm text-white/90 font-medium">{metric.value}</span>
+                      <span className="text-xs sm:text-sm text-white/90 font-medium">{metric.value}</span>
                     </div>
                   ))}
                 </div>
