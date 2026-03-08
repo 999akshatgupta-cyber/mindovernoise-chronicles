@@ -167,6 +167,19 @@
   }
 
   .hero-dock-pill {
-    box-shadow: 0 2px 12px hsl(0 0% 0% / 0.3);
+    box-shadow: 0 4px 20px hsl(0 0% 0% / 0.4), inset 0 1px 1px hsl(0 0% 100% / 0.15);
+  }
+
+  /* Utility for horizontal scrolling without visible scrollbar */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
   }
 }

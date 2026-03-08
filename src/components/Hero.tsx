@@ -277,7 +277,7 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="mt-8 max-w-[1000px] text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[1.05] tracking-tight text-white animate-in fade-in slide-in-from-bottom-10 duration-700 ease-out drop-shadow-lg" style={{ animationDelay: '250ms' }}>
             We build AI systems
-            <br className="hidden sm:block" />
+            <br className="hidden sm:block" />{" "}
             that do your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary/50">repetitive</span> work.
           </h1>
 
@@ -287,16 +287,16 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-5 animate-in fade-in slide-in-from-bottom-6 duration-700 ease-out" style={{ animationDelay: '550ms' }}>
-            <Button asChild size="lg" className="group h-14 px-8 text-base font-semibold shadow-[0_0_20px_rgba(var(--primary),0.25)] hover:shadow-[0_0_35px_rgba(var(--primary),0.45)] transition-all duration-300">
-              <Link to="/contact">
-                See How It Works / Book a Free Audit
-                <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+          <div className="mt-12 flex flex-col sm:flex-row w-full sm:w-auto px-4 sm:px-0 flex-wrap items-center justify-center gap-3 sm:gap-5 animate-in fade-in slide-in-from-bottom-6 duration-700 ease-out" style={{ animationDelay: '550ms' }}>
+            <Button asChild size="lg" className="group w-full sm:w-auto h-auto py-3.5 sm:py-0 sm:h-14 px-4 sm:px-8 text-xs sm:text-base font-semibold shadow-[0_0_20px_rgba(var(--primary),0.25)] hover:shadow-[0_0_35px_rgba(var(--primary),0.45)] transition-all duration-300">
+              <Link to="/contact" className="flex items-center justify-center text-center whitespace-normal">
+                HOW IT WORKS / BOOK A FREE AUDIT
+                <ArrowRight className="h-4 w-4 shrink-0 ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
 
-            <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base border-white/10 bg-white/5 hover:bg-white/10 hover:text-white transition-all duration-300 backdrop-blur-sm">
-              <Link to="/about">How we work</Link>
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto h-12 sm:h-14 px-8 text-sm sm:text-base border-white/10 bg-white/5 hover:bg-white/10 hover:text-white transition-all duration-300 backdrop-blur-sm">
+              <Link to="/about">HOW WE WORK</Link>
             </Button>
           </div>
         </div>
@@ -305,7 +305,7 @@ const Hero = () => {
       {/* Main Hero that scrubs canvas on scroll */}
       <div ref={containerRef} className="relative h-[250vh]">
         {/* Sticky Container */}
-        <div className="sticky top-0 h-screen w-full overflow-hidden flex items-end">
+        <div className="sticky top-0 h-[100svh] w-full overflow-hidden flex items-end">
 
           {/* Canvas WebGL/2D Background — z-[5] so it sits ABOVE the default stacking but below overlays */}
           <canvas
@@ -336,16 +336,16 @@ const Hero = () => {
                 </div>
 
                 {/* Right: Metric Pills */}
-                <div className="flex flex-wrap items-center justify-center lg:justify-end gap-2 sm:gap-3">
+                <div className="flex w-full lg:w-auto overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-1 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:pb-0 gap-2 sm:gap-3">
                   {heroMetrics.map((metric) => (
                     <div
                       key={metric.label}
-                      className="hero-dock-pill flex items-center rounded-full px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors cursor-default"
+                      className="hero-dock-pill flex-none w-[85%] sm:w-auto snap-center flex items-center rounded-xl sm:rounded-full px-4 py-3 sm:px-4 sm:py-2 backdrop-blur-xl bg-white/[0.06] border border-white/10 hover:bg-white/[0.12] transition-colors cursor-default"
                     >
-                      <span className="text-[0.55rem] sm:text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-primary mr-1.5 sm:mr-2">
-                        {metric.label}
+                      <span className="text-[0.55rem] sm:text-[0.6rem] font-bold uppercase tracking-[0.18em] text-primary shrink-0 mr-2 sm:mr-3">
+                        {metric.label}:
                       </span>
-                      <span className="text-xs sm:text-sm text-white/90 font-medium">{metric.value}</span>
+                      <span className="text-xs sm:text-sm text-white/90 font-medium truncate sm:whitespace-normal">{metric.value}</span>
                     </div>
                   ))}
                 </div>
