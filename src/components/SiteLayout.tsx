@@ -11,7 +11,7 @@ interface SiteLayoutProps {
 
 const SiteLayout = ({ children, className }: SiteLayoutProps) => {
   return (
-    <div className={cn("page-shell min-h-screen bg-background text-foreground overflow-x-hidden", className)}>
+    <div className={cn("page-shell min-h-screen bg-background text-foreground overflow-x-clip", className)}>
       <Navigation />
       <main className="relative z-10 pt-28 sm:pt-32">{children}</main>
       <Footer />
