@@ -26,17 +26,17 @@ const Navigation = () => {
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1380px]">
         <div className="panel-surface flex items-center justify-between rounded-[1.6rem] px-4 py-3 sm:px-5">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
-            <div className="grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-[1rem] border border-primary/25 bg-primary/10 shadow-[0_0_22px_hsl(var(--primary)/0.18)]">
-              <img src="/logo.png" alt="Mindovernoise Logo" className="h-full w-full object-cover object-center" />
+          <Link to="/" className="flex min-w-0 items-center gap-3 group">
+            <div className="grid h-12 w-12 sm:h-14 sm:w-14 shrink-0 place-items-center overflow-hidden rounded-[1rem] border border-primary/20 bg-black shadow-[0_0_15px_hsl(var(--primary)/0.15)]">
+              <img src="/brand%20logo.png" alt="Mindsovernoise Logo" className="h-full w-full object-cover scale-[1.35] transition-transform duration-500 group-hover:scale-[1.45]" />
             </div>
 
             <div className="min-w-0">
-              <p className="truncate font-display text-sm font-semibold uppercase tracking-[0.26em] text-foreground">
+              <p className="truncate font-display text-base font-bold uppercase tracking-[0.24em] text-foreground">
                 Mindsovernoise
               </p>
               <p className="hidden text-[0.62rem] uppercase tracking-[0.24em] text-muted-foreground sm:block">
-                AI systems and interface design
+                AI Operational Agency
               </p>
             </div>
           </Link>
