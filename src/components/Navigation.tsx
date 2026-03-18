@@ -29,7 +29,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center group relative z-10 transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
             <div className="relative flex items-center">
               <img 
-                src="/brand_logo_transparent.png" 
+                src="/brandlogo%20final.png" 
                 alt="Mindsovernoise Logo" 
                 className="h-12 sm:h-[3.25rem] w-auto object-contain object-left drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
               />
