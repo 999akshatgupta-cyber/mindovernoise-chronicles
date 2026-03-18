@@ -29,9 +29,9 @@ const Navigation = () => {
           <Link to="/" className="flex items-center group relative z-10 transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
             <div className="relative flex items-center">
               <img
-                src="/Gemini_Generated_Image_a3o1eta3o1eta3o1.svg"
+                src="/logo_final.png"
                 alt="Mindsovernoise Logo"
-                className="h-12 sm:h-[3.25rem] w-auto object-contain object-left drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                className="h-12 sm:h-[3.25rem] w-auto object-contain object-left scale-[1.3] transform origin-left"
               />
             </div>
           </Link>
