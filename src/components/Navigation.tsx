@@ -28,10 +28,10 @@ const Navigation = () => {
         <div className="panel-surface flex items-center justify-between rounded-[1.6rem] px-4 py-3 sm:px-5">
           <Link to="/" className="flex items-center group relative z-10 transition-all duration-300 hover:opacity-90 hover:scale-[1.02]">
             <div className="relative flex items-center">
-              <img 
-                src="/brandlogo_clean.png" 
-                alt="Mindsovernoise Logo" 
-                className="h-12 sm:h-[3.25rem] w-auto object-contain object-left drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" 
+              <img
+                src="/Gemini_Generated_Image_a3o1eta3o1eta3o1.svg"
+                alt="Mindsovernoise Logo"
+                className="h-12 sm:h-[3.25rem] w-auto object-contain object-left drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
               />
             </div>
           </Link>
