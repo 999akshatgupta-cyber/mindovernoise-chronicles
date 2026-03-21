@@ -229,7 +229,7 @@ const Home = () => {
                 {/* Left: massive colored info panel */}
                 <div
                   className={cn(
-                    "md:w-[40%] xl:w-[35%] p-10 lg:p-14 flex flex-col justify-center relative overflow-hidden shrink-0",
+                    "order-last md:order-none md:w-[40%] xl:w-[35%] p-10 lg:p-14 flex flex-col justify-center relative overflow-hidden shrink-0",
                     project.bgClass
                   )}
                 >
@@ -266,7 +266,7 @@ const Home = () => {
                 </div>
 
                 {/* Right: Massive premium image panel */}
-                <div className="h-64 md:h-auto md:w-[60%] xl:w-[65%] relative overflow-hidden bg-black flex-grow">
+                <div className="order-first md:order-none h-64 md:h-auto md:w-[60%] xl:w-[65%] relative overflow-hidden bg-black flex-grow">
                   <img
                     src={project.image}
                     alt={project.title}
