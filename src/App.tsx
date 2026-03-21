@@ -10,7 +10,7 @@ import Philosophy from "./pages/Philosophy";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import VoiceAssistant from "./components/VoiceAssistant";
+
 
 const queryClient = new QueryClient();
 
@@ -34,7 +34,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <VoiceAssistant />
+
       </TooltipProvider>
     </QueryClientProvider>
   </ErrorBoundary>
