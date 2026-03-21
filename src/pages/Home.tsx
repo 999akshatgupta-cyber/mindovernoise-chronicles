@@ -219,7 +219,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {selectedProjects.map((project) => {
             return (
               <article
@@ -266,7 +266,7 @@ const Home = () => {
                 </div>
 
                 {/* Right: Massive premium image panel */}
-                <div className="md:w-[60%] xl:w-[65%] relative overflow-hidden bg-black flex-grow">
+                <div className="h-64 md:h-auto md:w-[60%] xl:w-[65%] relative overflow-hidden bg-black flex-grow">
                   <img
                     src={project.image}
                     alt={project.title}
